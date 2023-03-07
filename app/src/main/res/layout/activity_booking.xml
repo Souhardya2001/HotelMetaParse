@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BookingActivity">
+
+    <TextView
+        android:id="@+id/textdata"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="To"
+        android:textColor="#f94144"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        style="@android:style/Widget.DeviceDefault.CalendarView"
+        android:layout_width="356dp"
+        android:layout_height="299dp"
+        android:focusedMonthDateColor="#FFFFFF"
+        android:selectedWeekBackgroundColor="#651FFF"
+        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/todaydate"
+        android:layout_width="76dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/fredoka_one"
+        android:textColor="#322828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="51dp"
+        android:layout_height="18dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="From"
+        android:textColor="#f94144"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="A Class"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#ff0054"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="224dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Ex Class"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#390099"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="229dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Normal Class"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#4ea8de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="317dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Which Type of Room you want to Book"
+        android:textColor="#3949AB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todaydate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="77dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/fredoka_one"
+        android:textColor="#322828"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toEndOf="@+id/textdata"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.617" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

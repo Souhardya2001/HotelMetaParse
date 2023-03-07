@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backuii"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="272dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="TextView"
+        android:textColor="#6D7EDD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <Button
+        android:id="@+id/bookbutton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="247dp"
+        android:layout_height="61dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Book a Room"
+        android:textAllCaps="false"
+        android:textColor="#FFFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#814FEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Check Booking Status"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#3D5AFE"
+        app:layout_constraintBottom_toTopOf="@+id/bookbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Sign out"
+        android:textAllCaps="false"
+        app:backgroundTint="#C94CEA"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

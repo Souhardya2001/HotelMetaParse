@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aldrich</item>
+        <item>@font/alice</item>
+        <item>@font/allerta</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/candal</item>
+        <item>@font/darker_grotesque_light</item>
+        <item>@font/fredoka_one</item>
+    </array>
+</resources>
